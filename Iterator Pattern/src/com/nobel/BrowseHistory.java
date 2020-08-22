@@ -9,8 +9,7 @@ public class BrowseHistory {
     private String[] urls = new String[10];
     private int pushIndex = 0;
     public void push(String url) {
-        urls[pushIndex] = url;
-        pushIndex++;
+        urls[pushIndex++] = url;
     }
 
     public Iterator createIterator() {
